@@ -21,21 +21,21 @@ export const getUserID = (req, res) => {
     res.send(requiredUser);
 };
 
-export const deleteUser = (req, res) => {
-    const { id } = req.params;
-    user = user.filter((user) => user.id !== id);
-    res.send(`User ${id} deleted`);
-};
+// export const deleteUser = (req, res) => {
+//     const { id } = req.params;
+//     user = user.filter((user) => user.id !== id);
+//     res.send(`User ${id} deleted`);
+// };
 
-export const updateUser =  (req, res) => {
-    const { id } = req.params;
-    const { Fname, Lname, Age } = req.body;
-    const userUpdated = user.find((user) => user.id === id);
+// export const updateUser =  (req, res) => {
+//     const { id } = req.params;
+//     const { Fname, Lname, Age } = req.body;
+//     const userUpdated = user.find((user) => user.id === id);
 
-    if(Fname) userUpdated.Fname = Fname;
-    if(Lname) userUpdated.Lname = Lname;
-    if(Age) userUpdated.Age = Age;
+//     if(Fname) userUpdated.Fname = Fname;
+//     if(Lname) userUpdated.Lname = Lname;
+//     if(Age) userUpdated.Age = Age;
 
-    res.send(`User ${id} updated`);
+//     res.send(`User ${id} updated`);
  
-};
+// };
