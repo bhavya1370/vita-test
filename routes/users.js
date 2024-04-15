@@ -12,9 +12,9 @@ router.post('/',createUser);
 
 router.get('/:id',getUserID);
 
-router.delete('/:id', deleteUser);
+// router.delete('/:id', deleteUser);
 
-router.patch('/:id', updateUser);
+// router.patch('/:id', updateUser);
 
 router.get('/pr_changes', async (req, res) => {
     try {
